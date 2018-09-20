@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script>
+
+	var a = parseInt (prompt ("Сумма вклада:"));
+	var b = parseInt (prompt ("Процентная ставка:"));
+	var c = parseInt (prompt ("Срок вклада:"));
+
+	for (var d=1; d<=c; d++) {
+		a=a+a*b/100;
+		alert ("Прошло лет: " + d + ", на счету: " + Math.floor(a));
+	}
+
+</script>
