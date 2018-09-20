@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script>
+	alert ("Попади в мишень! ")
+	var a = 25;
+	var b = 40;
+	var c = 53;
+	var d = 78;
+	var n = parseInt (prompt ("Целься! Выбери градус для выстрела:"));
+
+	if ( isNaN (n)) {
+		alert ("Введи числовое значение.")
+	} else if ((n>=a) && (n<=b) || (n>=c) && (n<=d)) {
+		alert ("Отлично, попал!");
+	} else {
+		alert ("Промахнулся. Попробуй ещё.");
+	}
+</script>
