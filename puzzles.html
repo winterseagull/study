@@ -1,22 +1,21 @@
 <meta charset="utf-8">
 <script>
-	var answer1="арбуз";
-	var answer2="капуста";
-	var reply1=prompt ("Без окон, без дверей - полна горница людей. Что это?");
-	var correct=0;
-	var correct=parseInt ("0");
-	if (answer1 == reply1) {
-		alert ("Угадал!");
-		correct=correct+1;
-	} else {
-		alert ("Неверно. :(");
-	}
-	var reply2=prompt ("Сто одёжек и все без застёжек. Что это?");
-	if (answer2 == reply2) {
+	var score = 0;
+	var answer = "";
+
+	var answer = prompt ("Без окон, без дверей - полна горница людей. Что это?");
+	if (answer == "арбуз") {
 		alert ("Верно!");
-		correct=correct+1;
+		score = score + 1;
 	} else {
-		alert ("Неправильно.");
+		alert ("Неверно.");
 	}
-	alert ("Правильных ответов: " + correct);
+	var answer = prompt ("Сто одежек и все без застежек. Что это?");
+	if (answer == "капуста") {
+		alert ("Верно!");
+		score = score + 1;
+	} else {
+		alert ("Неверно.");
+	}
+	alert ("Правильных ответов: " + score);
 </script>
